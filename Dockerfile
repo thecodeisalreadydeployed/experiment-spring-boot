@@ -8,7 +8,3 @@ ENV PORT ${PORT}
 EXPOSE ${PORT}
 CMD java -jar experiment-0.0.1-SNAPSHOT.jar --server.port=${PORT}
 
-#FROM openjdk:11
-#WORKDIR /app
-#COPY /experiment-0.0.1-SNAPSHOT.jar .
-#CMD java -jar experiment-0.0.1.jar
