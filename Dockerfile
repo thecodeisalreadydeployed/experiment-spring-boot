@@ -1,4 +1,5 @@
 FROM maven:3.8.4-jdk-11-slim as build-env
+ADD "https://www.random.org/cgi-bin/randbyte?nbytes=10&format=h" skipcache
 COPY . .
 RUN mvn clean install
 
